@@ -33,6 +33,7 @@ public class CadastroControle {
     public Cadastro alterar(@RequestBody Cadastro obj) {
         return servico.cadastrar(obj);
     }
+    
 
     @DeleteMapping("/cadastros/{id}")
     public void remover(@PathVariable Long id) {
